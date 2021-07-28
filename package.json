@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc && node dist/index.js 1234",
+    "build": "tsc && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Hetwe/ts-application#readme",
   "devDependencies": {
+    "@types/node": "^16.4.4",
+    "chalk": "^4.1.1",
     "typescript": "^4.3.5"
   }
 }

@@ -1,23 +1,23 @@
-class CalculateOfNubmer{
+export default class CalculateOfNubmer{
     private arrayOfNumber: number[];
 
     constructor(consoleNumber: string){
         this.arrayOfNumber = consoleNumber.split('').map( item => parseInt(item));
     }
 
-    getMaxElementFromNumber(){
+    getMaxElementFromNumber(): number{
         return Math.max(...this.arrayOfNumber);
     }
     
-    getMinElementFromNumber(){
+    getMinElementFromNumber(): number{
         return Math.min(...this.arrayOfNumber);
     }
 
-    getSummaElementFromNumber(){
+    getSummaElementFromNumber(): number{
         return this.arrayOfNumber.reduce((previousValue, currentValue) => previousValue + currentValue);
     }
 
-    getAverageElementFromNumber(){
+    getAverageElementFromNumber(): number{
         return this.arrayOfNumber.reduce((previousValue, currentValue) => previousValue + currentValue) / this.arrayOfNumber.length;
     }
 }

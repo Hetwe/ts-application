@@ -1,8 +1,5 @@
 {
   "compileOnSave": true,
-  // "include": [
-  //   "#src/index.ts"
-  // ],
   "compilerOptions": {             
     "target": "ES6",        
     "module": "commonjs",
